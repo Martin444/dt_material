@@ -23,4 +23,15 @@ class DTStyleContainers {
       ),
     ),
   );
+  static BoxDecoration backgroundOnBoardingGradient = const BoxDecoration(
+    gradient: LinearGradient(
+      begin: Alignment.bottomCenter,
+      end: Alignment.topCenter,
+      colors: [
+        Color(0xFF34BDE2),
+        Color(0xFF289CFC),
+      ],
+      stops: [0.54, 1.0],
+    ),
+  );
 }

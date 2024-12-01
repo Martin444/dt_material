@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DTColors {
+  static Color onBoardingBackground = const Color(0xFFFFFFFF);
+
   static Color primaryBackground = const Color(0xFFFFFFFF);
 
   static Color secundaryBackground = const Color(0xff318580);
