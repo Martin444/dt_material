@@ -31,7 +31,7 @@ class DTStyleContainers {
         Color(0xFF34BDE2),
         Color(0xFF289CFC),
       ],
-      stops: [0.54, 1.0],
+      stops: [0.1, 1.0],
     ),
   );
 }

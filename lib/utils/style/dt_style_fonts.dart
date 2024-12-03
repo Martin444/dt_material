@@ -2,11 +2,25 @@ import 'package:dt_material/utils/dt_colors.dart';
 import 'package:flutter/material.dart';
 
 var styleGlobal = const TextStyle(
-  fontFamily: 'Sansation-bold',
+  fontFamily: 'Montserrat',
   fontStyle: FontStyle.normal,
 );
 
 class DTTextStyle {
+  // ONBOARDING
+
+  static TextStyle titleOnboarding = styleGlobal.copyWith(
+    color: DTColors.textColor2,
+    fontSize: 24,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle descriptionOnboarding = styleGlobal.copyWith(
+    color: DTColors.textColor2,
+    fontSize: 20,
+    fontWeight: FontWeight.w300,
+  );
+
   static TextStyle title1 = styleGlobal.copyWith(
     color: DTColors.textColor3,
     fontSize: 24,

@@ -42,7 +42,7 @@ class _ButtonNextState extends State<ButtonNext> with SingleTickerProviderStateM
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeigth = MediaQuery.of(context).size.height;
     return Stack(
-      alignment: Alignment.center,
+      alignment: Alignment.bottomCenter,
       children: [
         CustomPaint(
           painter: CirclePainter(),
