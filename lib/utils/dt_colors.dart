@@ -27,7 +27,7 @@ class DTColors {
 
   static Color bgSucces = const Color(0xFF41B06A);
 
-  static Color bgButton = const Color(0xff3D72FD);
+  static Color bgButton = const Color(0xff121212);
 
   static Color iconColor = const Color(0xff8E92A2);
 

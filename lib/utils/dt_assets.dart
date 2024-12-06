@@ -22,8 +22,9 @@ class DTIcons {
 
 class DTImages {
   static String catito = 'https://res.cloudinary.com/photographer/image/upload/v1707588911/catito_wuzsen.jpg';
-  static String isoLogo = 'assets/logo/iso-logo.png';
+  static String isoLogo = 'assets/logo/isotipodeportivo.png';
   static String dashLogo = 'assets/logo/logotipodeportivo.png';
+  static String dashLogoBlack = 'assets/logo/logotipodeportivoblack.png';
   static String succesImageSvg = 'assets/fivehand.svg';
   static String noDataImageSvg = 'assets/nodata.svg';
 }

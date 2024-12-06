@@ -21,6 +21,14 @@ class DTTextStyle {
     fontWeight: FontWeight.w300,
   );
 
+  // Login
+
+  static TextStyle titleLogin = styleGlobal.copyWith(
+    color: DTColors.textColor3,
+    fontSize: 20,
+    fontWeight: FontWeight.w800,
+  );
+
   static TextStyle title1 = styleGlobal.copyWith(
     color: DTColors.textColor3,
     fontSize: 24,
@@ -159,11 +167,13 @@ class DTTextStyle {
     fontWeight: FontWeight.w200,
   );
 
+  //Button
+
   static TextStyle primaryButtonStyle = styleGlobal.copyWith(
     color: DTColors.textColor2,
     fontSize: 18,
-    fontWeight: FontWeight.w600,
-    height: 1.8,
+    fontWeight: FontWeight.w500,
+    height: 2,
   );
 
   static TextStyle textbtnStyle = styleGlobal.copyWith(
