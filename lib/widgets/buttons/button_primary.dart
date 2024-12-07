@@ -60,9 +60,10 @@ class ButtonPrimary extends StatelessWidget {
                       ],
                     ),
                   )
-                : SizedBox(
-                    height: 25,
+                : Container(
+                    height: 38,
                     width: 25,
+                    padding: const EdgeInsets.symmetric(vertical: 10),
                     child: CircularProgressIndicator(
                       valueColor: AlwaysStoppedAnimation<Color>(DTColors.textColor2),
                     ),
