@@ -29,6 +29,21 @@ class DTTextStyle {
     fontWeight: FontWeight.w800,
   );
 
+  ///
+
+  // Home
+
+  static TextStyle titleGoodmorning = styleGlobal.copyWith(
+    color: DTColors.textColor3,
+    fontSize: 24,
+    fontWeight: FontWeight.w800,
+  );
+  static TextStyle titleDailymessage = styleGlobal.copyWith(
+    color: DTColors.textColor3,
+    fontSize: 20,
+    fontWeight: FontWeight.w300,
+  );
+
   static TextStyle title1 = styleGlobal.copyWith(
     color: DTColors.textColor3,
     fontSize: 24,
