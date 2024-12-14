@@ -29,6 +29,8 @@ class DTColors {
 
   static Color bgButton = const Color(0xff121212);
 
+  static Color bgButtonSecundary = const Color(0xFFFFFFFF);
+
   static Color iconColor = const Color(0xff8E92A2);
 
   static Color iconColorBlack = const Color(0xFF000000);

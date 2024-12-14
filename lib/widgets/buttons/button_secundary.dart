@@ -26,8 +26,8 @@ class ButtonSecundary extends StatelessWidget {
       child: TextButton(
         style: ButtonStyle(
           backgroundColor: disabled || onPressed == null
-              ? WidgetStateProperty.all(DTColors.bgCategorySelected)
-              : WidgetStateProperty.all(DTColors.bgCategorySelected),
+              ? WidgetStateProperty.all(DTColors.bgButtonSecundary)
+              : WidgetStateProperty.all(DTColors.bgButtonSecundary),
           overlayColor: WidgetStateProperty.all(
             const Color.fromARGB(255, 97, 97, 97).withOpacity(0.1),
           ),
