@@ -2,7 +2,7 @@ import 'package:dt_material/utils/dt_colors.dart';
 import 'package:dt_material/utils/style/dt_style_fonts.dart';
 import 'package:flutter/material.dart';
 
-class PUInputDropDown<T> extends StatefulWidget {
+class DTInputDropDown<T> extends StatefulWidget {
   final String label;
   final String hintText;
   final String? errorText;
@@ -12,7 +12,7 @@ class PUInputDropDown<T> extends StatefulWidget {
 
   final Function(T) onSelect;
 
-  const PUInputDropDown({
+  const DTInputDropDown({
     super.key,
     required this.items,
     required this.onSelect,
@@ -24,10 +24,10 @@ class PUInputDropDown<T> extends StatefulWidget {
   });
 
   @override
-  State<PUInputDropDown<T>> createState() => _InputDropDownState<T>();
+  State<DTInputDropDown<T>> createState() => _InputDropDownState<T>();
 }
 
-class _InputDropDownState<T> extends State<PUInputDropDown<T>> {
+class _InputDropDownState<T> extends State<DTInputDropDown<T>> {
   T? selectedValue;
 
   @override

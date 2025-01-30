@@ -44,6 +44,11 @@ class DTTextStyle {
     fontWeight: FontWeight.w300,
   );
 
+  static TextStyle subTitlehome = styleGlobal.copyWith(
+    color: DTColors.textColor3,
+    fontSize: 19,
+    fontWeight: FontWeight.w800,
+  );
   static TextStyle title1 = styleGlobal.copyWith(
     color: DTColors.textColor3,
     fontSize: 24,
@@ -60,6 +65,16 @@ class DTTextStyle {
     color: DTColors.textColor1,
     fontSize: 16,
     fontWeight: FontWeight.w600,
+  );
+
+  //////
+  ///
+  ///CREATE SPORT FACILITIE
+
+  static TextStyle titleCreate = styleGlobal.copyWith(
+    color: DTColors.textColor3,
+    fontSize: 19,
+    fontWeight: FontWeight.w800,
   );
 
   static TextStyle textLabelMenu = styleGlobal.copyWith(

@@ -19,6 +19,7 @@ class DTIcons {
   static String iconEdit = 'assets/edit-icon.svg';
   static String iconDelete = 'assets/delete-icon.svg';
   static String iconUpload = 'assets/upload.svg';
+  static String iconPlus = 'assets/plus.svg';
 }
 
 class DTImages {

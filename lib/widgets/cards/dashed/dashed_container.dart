@@ -3,12 +3,18 @@ import 'package:flutter/material.dart';
 
 class DashedBorderContainer extends StatelessWidget {
   final Widget child;
-  DashedBorderContainer({required this.child});
+  final double? width;
+  final double? height;
+  DashedBorderContainer({
+    required this.child,
+    this.width,
+    this.height,
+  });
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 150,
-      height: 150,
+      width: width ?? 150,
+      height: height ?? 150,
       padding: const EdgeInsets.all(20),
       child: Center(
         child: CustomPaint(
