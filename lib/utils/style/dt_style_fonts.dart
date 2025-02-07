@@ -83,6 +83,12 @@ class DTTextStyle {
     fontWeight: FontWeight.w700,
   );
 
+  static TextStyle textDirection = styleGlobal.copyWith(
+    color: DTColors.textColor1,
+    fontSize: 19,
+    fontWeight: FontWeight.bold,
+  );
+
   static TextStyle title3Withe = styleGlobal.copyWith(
     color: DTColors.textColor2,
     fontSize: 16,
@@ -105,18 +111,6 @@ class DTTextStyle {
     color: Colors.white,
     fontSize: 18,
     fontWeight: FontWeight.w600,
-  );
-
-  static TextStyle title5 = styleGlobal.copyWith(
-    color: DTColors.textColor1,
-    fontSize: 20,
-    fontWeight: FontWeight.bold,
-  );
-
-  static TextStyle title6 = styleGlobal.copyWith(
-    color: Colors.white,
-    fontSize: 14,
-    fontWeight: FontWeight.w500,
   );
 
   static TextStyle description1 = styleGlobal.copyWith(
