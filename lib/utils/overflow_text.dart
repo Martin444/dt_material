@@ -45,7 +45,7 @@ class DTOverflowTextDetector extends StatelessWidget {
 
     tp = TextPainter(
       maxLines: maxLines,
-      textAlign: textAlign ?? TextAlign.start,
+      textAlign: textAlign ?? TextAlign.center,
       textDirection: textDirection ?? TextDirection.ltr,
       text: TextSpan(
         children: listaTextos,
@@ -60,9 +60,22 @@ class DTOverflowTextDetector extends StatelessWidget {
             ? Tooltip(
                 triggerMode: TooltipTriggerMode.tap,
                 message: message,
-                child: RichText(
-                    maxLines: maxLines, overflow: TextOverflow.ellipsis, text: TextSpan(children: listaTextos)))
-            : RichText(text: TextSpan(children: listaTextos));
+                child: SizedBox(
+                  width: constrains.maxWidth,
+                  child: RichText(
+                    maxLines: maxLines,
+                    textAlign: TextAlign.center,
+                    overflow: TextOverflow.ellipsis,
+                    text: TextSpan(children: listaTextos),
+                  ),
+                ),
+              )
+            : RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  children: listaTextos,
+                ),
+              );
       },
     );
   }

@@ -197,7 +197,7 @@ class DTTextStyle {
     color: DTColors.textColor2,
     fontSize: 18,
     fontWeight: FontWeight.w500,
-    height: 2,
+    height: 1,
   );
 
   static TextStyle textbtnStyle = styleGlobal.copyWith(

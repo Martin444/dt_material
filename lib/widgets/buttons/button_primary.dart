@@ -33,7 +33,7 @@ class ButtonPrimary extends StatelessWidget {
           ),
           padding: WidgetStateProperty.all(
             const EdgeInsets.symmetric(
-              vertical: 10,
+              vertical: 15,
               horizontal: 15,
             ),
           ),
@@ -46,6 +46,7 @@ class ButtonPrimary extends StatelessWidget {
         onPressed: disabled || onPressed == null ? null : onPressed,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             !load
                 ? Flexible(
@@ -61,9 +62,8 @@ class ButtonPrimary extends StatelessWidget {
                     ),
                   )
                 : Container(
-                    height: 38,
-                    width: 25,
-                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    height: 22,
+                    width: 22,
                     child: CircularProgressIndicator(
                       valueColor: AlwaysStoppedAnimation<Color>(DTColors.textColor2),
                     ),

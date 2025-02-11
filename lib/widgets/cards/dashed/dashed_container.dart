@@ -5,17 +5,21 @@ class DashedBorderContainer extends StatelessWidget {
   final Widget child;
   final double? width;
   final double? height;
-  DashedBorderContainer({
+  final EdgeInsetsGeometry? padding;
+
+  const DashedBorderContainer({
+    super.key,
     required this.child,
     this.width,
     this.height,
+    this.padding,
   });
   @override
   Widget build(BuildContext context) {
     return Container(
       width: width ?? 150,
       height: height ?? 150,
-      padding: const EdgeInsets.all(20),
+      padding: padding ?? const EdgeInsets.all(20),
       child: Center(
         child: CustomPaint(
           painter: DashedBorderPainter(color: Colors.black),
