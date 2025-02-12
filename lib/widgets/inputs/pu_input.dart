@@ -107,7 +107,7 @@ class _DTInputState extends State<DTInput> {
           textInputAction: widget.textInputAction,
           keyboardType: widget.textInputType,
           focusNode: widget.focusNode,
-          maxLines: widget.maxLines,
+          maxLines: widget.maxLines ?? 1,
           inputFormatters: getFormatForTypeInput(),
           decoration: InputDecoration(
             fillColor: DTColors.bgInput,
