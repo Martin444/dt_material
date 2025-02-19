@@ -191,6 +191,19 @@ class DTTextStyle {
     fontWeight: FontWeight.w200,
   );
 
+  //SPORT FIELD CARD
+  static TextStyle sportFieldTitle = styleGlobal.copyWith(
+    color: Colors.white,
+    fontSize: 19,
+    fontWeight: FontWeight.bold,
+  );
+
+  static TextStyle sportFieldClubName = styleGlobal.copyWith(
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+  );
+
   //Button
 
   static TextStyle primaryButtonStyle = styleGlobal.copyWith(

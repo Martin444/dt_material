@@ -13,6 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   svg_flutter: ^0.0.1
   textfield_tags: ^3.0.1
+  cached_network_image: ^3.4.1
 
 dependency_overrides:
   intl: ^0.20.1

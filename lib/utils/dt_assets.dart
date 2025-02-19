@@ -29,4 +29,9 @@ class DTImages {
   static String dashLogoBlack = 'assets/logo/logotipodeportivoblack.png';
   static String succesImageSvg = 'assets/fivehand.svg';
   static String noDataImageSvg = 'assets/nodata.svg';
+  static String baskeyIco = 'assets/spaces/basket.png';
+  static String futbolIco = 'assets/spaces/futbol.png';
+  static String gymIco = 'assets/spaces/gym.png';
+  static String rugbyIco = 'assets/spaces/rugby.png';
+  static String tenisIco = 'assets/spaces/tenis.png';
 }
