@@ -24,6 +24,7 @@ class SportFieldCard extends StatelessWidget {
             child: CachedNetworkImage(
               imageUrl: imageUrl,
               width: double.infinity,
+              height: double.infinity,
               fit: BoxFit.cover,
               placeholder: (context, url) => Center(
                 child: Image.asset(
@@ -56,8 +57,8 @@ class SportFieldCard extends StatelessWidget {
               children: [
                 Image.asset(
                   getSportIcon(sportType),
-                  width: 50,
-                  height: 50,
+                  width: 40,
+                  height: 40,
                 ),
                 const SizedBox(width: 8.0),
                 Column(
