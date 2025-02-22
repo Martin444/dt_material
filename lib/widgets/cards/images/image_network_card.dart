@@ -11,6 +11,9 @@ class ImageNetworkCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return CachedNetworkImage(
       imageUrl: urlPhoto,
+      httpHeaders: const {
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+      },
       width: double.infinity,
       height: double.infinity,
       fit: BoxFit.cover,
