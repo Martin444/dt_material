@@ -2,7 +2,7 @@ import 'package:dt_material/utils/dt_colors.dart';
 import 'package:dt_material/utils/formaters/currency_converter.dart';
 import 'package:dt_material/utils/overflow_text.dart';
 import 'package:dt_material/utils/style/dt_style_fonts.dart';
-import 'package:dt_material/widgets/cards/cart/model/cart_item_model.dart';
+import 'package:dt_material/molecules/cards/cart/model/cart_item_model.dart';
 import 'package:flutter/material.dart';
 
 class CartTile extends StatelessWidget {

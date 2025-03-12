@@ -1,4 +1,4 @@
-import 'package:dt_material/widgets/cards/dashed/dashed_border_painter.dart';
+import 'package:dt_material/molecules/cards/dashed/dashed_border_painter.dart';
 import 'package:flutter/material.dart';
 
 class DashedBorderContainer extends StatelessWidget {

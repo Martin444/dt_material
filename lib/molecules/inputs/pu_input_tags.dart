@@ -1,7 +1,7 @@
-import 'package:dt_material/widgets/inputs/pu_input.dart';
+import 'package:dt_material/atoms/inputs/pu_input.dart';
 import 'package:flutter/material.dart';
 
-import '../buttons/button_primary.dart';
+import '../../atoms/buttons/button_primary.dart';
 
 class PuInputTags extends StatefulWidget {
   final TextEditingController controller;

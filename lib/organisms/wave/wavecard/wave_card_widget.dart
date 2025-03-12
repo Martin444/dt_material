@@ -1,4 +1,4 @@
-import 'package:dt_material/widgets/cards/wavecard/wave_painter.dart';
+import 'package:dt_material/dt_material.dart';
 import 'package:flutter/material.dart';
 
 class WaveCardWidget extends StatelessWidget {
