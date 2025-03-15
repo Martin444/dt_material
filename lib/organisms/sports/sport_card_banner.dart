@@ -64,18 +64,13 @@ class SportCardBanner extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8.0),
-            // DTOverflowTextDetector(
-            //   message: location,
-            //   children: [
-            //     Text(
-            //       location,
-            //       style: TextStyle(
-            //         fontSize: 16.0,
-            //         color: Colors.black,
-            //       ),
-            //     ),
-            //   ],
-            // ),
+            Text(
+              location,
+              style: const TextStyle(
+                fontSize: 16.0,
+                color: Colors.black,
+              ),
+            ),
             const SizedBox(height: 8.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -97,9 +92,15 @@ class SportCardBanner extends StatelessWidget {
 
   Widget _buildImageStack() {
     if (imageUrls.length == 1) {
-      return CircleAvatar(
-        backgroundImage: NetworkImage(imageUrls[0]),
-        radius: 24.0,
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        child: SizedBox(
+          height: 40,
+          width: 50,
+          child: ImageNetworkCard(
+            urlPhoto: imageUrls[0],
+          ),
+        ),
       );
     }
 
@@ -114,10 +115,7 @@ class SportCardBanner extends StatelessWidget {
                   left: index * 20.0,
                   child: Transform.rotate(
                     angle: (index % 2 == 0) ? -0.1 : 0.1,
-                    child: CircleAvatar(
-                      backgroundImage: NetworkImage(url),
-                      radius: 24.0,
-                    ),
+                    child: ImageNetworkCard(urlPhoto: url),
                   ),
                 ),
               ))

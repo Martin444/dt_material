@@ -1,15 +1,23 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dt_material/dt_material.dart';
+import 'package:dt_material/utils/overflow_text.dart';
 import 'package:flutter/material.dart';
 
 class SportFieldCard extends StatelessWidget {
   final String title;
   final String clubName;
+  final String? clubImageUrl;
   final String imageUrl;
   final SportType sportType;
 
-  const SportFieldCard(
-      {super.key, required this.title, required this.clubName, required this.imageUrl, required this.sportType});
+  const SportFieldCard({
+    super.key,
+    required this.title,
+    required this.clubName,
+    required this.imageUrl,
+    required this.sportType,
+    this.clubImageUrl,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -41,10 +49,10 @@ class SportFieldCard extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Color(0xFFE8DDDD).withOpacity(0.3), // Color inicial del gradiente
-                    Color(0xFF000000).withOpacity(0.4), // Color final del gradiente
+                    const Color(0xFFE8DDDD).withOpacity(0.3), // Color inicial del gradiente
+                    const Color(0xFF000000).withOpacity(0.4), // Color final del gradiente
                   ],
-                  stops: [0.12, 0.63], // Posiciones de los colores en el gradiente
+                  stops: const [0.12, 0.63], // Posiciones de los colores en el gradiente
                 ),
               ),
             ),
@@ -69,9 +77,35 @@ class SportFieldCard extends StatelessWidget {
                       style: DTTextStyle.sportFieldTitle,
                     ),
                     const SizedBox(height: 4.0),
-                    Text(
-                      clubName,
-                      style: DTTextStyle.sportFieldClubName,
+                    Row(
+                      children: [
+                        clubImageUrl != null
+                            ? ClipRRect(
+                                borderRadius: const BorderRadius.vertical(top: Radius.circular(100.0)),
+                                child: CachedNetworkImage(
+                                  imageUrl: clubImageUrl!,
+                                  width: 25,
+                                  height: 25,
+                                  fit: BoxFit.cover,
+                                  placeholder: (context, url) => Center(
+                                    child: Image.asset(
+                                      DTImages.isoLogo,
+                                    ),
+                                  ),
+                                  errorWidget: (context, url, error) => const Icon(Icons.error),
+                                ),
+                              )
+                            : Container(),
+                        DTOverflowTextDetector(
+                          message: clubName,
+                          children: [
+                            Text(
+                              clubName,
+                              style: DTTextStyle.sportFieldClubName,
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ],
                 ),
