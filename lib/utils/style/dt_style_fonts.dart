@@ -120,6 +120,15 @@ class DTTextStyle {
     height: 1.0,
   );
 
+  //Status Page
+
+  static TextStyle statusTitlePage = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 23,
+    fontWeight: FontWeight.bold,
+    height: 1.0,
+  );
+
   //CART_ITEM
 
   static TextStyle brandHeadStyle = styleGlobal.copyWith(

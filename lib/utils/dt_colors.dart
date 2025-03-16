@@ -39,9 +39,11 @@ class DTColors {
 
   static Color textColor1 = const Color(0xFF969696);
 
+  static Color textColor2 = const Color(0xFFFDF5E6);
+
   static Color textColor3 = const Color(0xFF595959);
 
   static Color textColor4 = const Color(0xff8E92A2);
 
-  static Color textColor2 = const Color(0xFFFDF5E6);
+  static Color textColor5 = const Color(0xFF000000);
 }
