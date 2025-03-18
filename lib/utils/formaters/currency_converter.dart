@@ -1,6 +1,12 @@
 import 'package:intl/intl.dart';
 
 extension PUStringFormater on String {
+  // Capitaliza la primera letra de un texto
+  String capitalizeFirstLetter() {
+    if (isEmpty) return this;
+    return this[0].toUpperCase() + substring(1).toLowerCase();
+  }
+
   String convertToCorrency() {
     final originalValue = double.tryParse(this);
     if (originalValue == null) {

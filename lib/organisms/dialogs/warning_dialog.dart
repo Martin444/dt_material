@@ -4,8 +4,10 @@ import '../../utils/dt_colors.dart';
 import '../../utils/style/dt_style_fonts.dart';
 
 class WarningDialog extends StatelessWidget {
+  final String title;
   const WarningDialog({
     super.key,
+    required this.title,
   });
 
   @override
@@ -22,7 +24,7 @@ class WarningDialog extends StatelessWidget {
               size: 60,
             ),
             Text(
-              'Crea el primer producto para poder continuar',
+              title,
               style: DTTextStyle.title1,
             ),
           ],

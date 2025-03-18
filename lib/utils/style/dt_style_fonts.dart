@@ -155,19 +155,19 @@ class DTTextStyle {
   ///////////////
   ///
   ///
-  //////HEAD CATALOG
+  //////Detail page Sport
   ///
-  static TextStyle cartQuantityTextStyle = styleGlobal.copyWith(
-    color: DTColors.textColor3,
-    fontSize: 14,
-    fontWeight: FontWeight.w800,
+  static TextStyle titleSportDescription = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
     height: 1.0,
   );
 
-  static TextStyle titleHeadTextStyle = styleGlobal.copyWith(
-    color: DTColors.textColor3,
-    fontSize: 21,
-    fontWeight: FontWeight.bold,
+  static TextStyle locationSportDescription = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
     height: 1.0,
   );
 
