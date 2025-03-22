@@ -10,12 +10,12 @@ class ButtonNext extends StatefulWidget {
   bool disabled = false;
 
   ButtonNext({
-    Key? key,
+    super.key,
     required this.title,
     required this.onPressed,
     required this.load,
     this.disabled = false,
-  }) : super(key: key);
+  });
 
   @override
   State<ButtonNext> createState() => _ButtonNextState();

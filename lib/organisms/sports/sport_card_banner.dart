@@ -34,21 +34,25 @@ class SportCardBanner extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
-                  children: [
-                    Image.asset(
-                      getSportIcon(type),
-                      height: 28,
-                    ),
-                    const SizedBox(width: 8.0),
-                    Text(
-                      title,
-                      style: const TextStyle(
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.bold,
+                Flexible(
+                  child: Row(
+                    children: [
+                      Image.asset(
+                        getSportIcon(type),
+                        height: 28,
                       ),
-                    ),
-                  ],
+                      const SizedBox(width: 8.0),
+                      Flexible(
+                        child: Text(
+                          title,
+                          style: const TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 IconButton(
                   icon: const Icon(Icons.calendar_today),
@@ -66,23 +70,21 @@ class SportCardBanner extends StatelessWidget {
             const SizedBox(height: 8.0),
             Text(
               location,
-              style: const TextStyle(
-                fontSize: 16.0,
-                color: Colors.black,
-              ),
             ),
             const SizedBox(height: 8.0),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                _buildImageStack(),
-                TextButton(
-                  child: Text('+${imageUrls.length}'),
-                  onPressed: () {
-                    // Agregar funcionalidad para mostrar más imágenes
-                  },
-                ),
-              ],
+            Flexible(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Flexible(child: _buildImageStack()),
+                  TextButton(
+                    child: Text('+${imageUrls.length}'),
+                    onPressed: () {
+                      // Agregar funcionalidad para mostrar más imágenes
+                    },
+                  ),
+                ],
+              ),
             ),
           ],
         ),
@@ -95,8 +97,8 @@ class SportCardBanner extends StatelessWidget {
       return ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: SizedBox(
-          height: 40,
-          width: 50,
+          height: 20,
+          width: 20,
           child: ImageNetworkCard(
             urlPhoto: imageUrls[0],
           ),
@@ -115,7 +117,11 @@ class SportCardBanner extends StatelessWidget {
                   left: index * 20.0,
                   child: Transform.rotate(
                     angle: (index % 2 == 0) ? -0.1 : 0.1,
-                    child: ImageNetworkCard(urlPhoto: url),
+                    child: ImageNetworkCard(
+                      urlPhoto: url,
+                      height: 52,
+                      width: 32,
+                    ),
                   ),
                 ),
               ))

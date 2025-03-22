@@ -5,11 +5,20 @@ import '../../../dt_material.dart';
 
 class ImageNetworkCard extends StatelessWidget {
   final String urlPhoto;
-  const ImageNetworkCard({super.key, required this.urlPhoto});
+  final double? height;
+  final double? width;
+  const ImageNetworkCard({
+    super.key,
+    required this.urlPhoto,
+    this.height,
+    this.width,
+  });
 
   @override
   Widget build(BuildContext context) {
     return CachedNetworkImage(
+      height: height,
+      width: width,
       imageUrl: urlPhoto,
       httpHeaders: const {
         'Referrer-Policy': 'strict-origin-when-cross-origin',

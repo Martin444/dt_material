@@ -5,14 +5,14 @@ class ClubProfileCard extends StatelessWidget {
   final String? clubImageUrl;
   final String title;
   final String description;
-  final double rating;
+  final double? rating;
 
   const ClubProfileCard({
     super.key,
     this.clubImageUrl,
     required this.title,
     required this.description,
-    required this.rating,
+    this.rating,
   });
 
   @override
@@ -32,19 +32,9 @@ class ClubProfileCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           clubImageUrl != null
-              ? ClipRRect(
-                  borderRadius: const BorderRadius.vertical(top: Radius.circular(100.0)),
-                  child: CachedNetworkImage(
-                    imageUrl: clubImageUrl!,
-                    width: 25,
-                    height: 25,
-                    fit: BoxFit.cover,
-                    placeholder: (context, url) => Center(
-                      child: Image.asset(
-                        'assets/iso_logo.png',
-                      ),
-                    ),
-                    errorWidget: (context, url, error) => const Icon(Icons.error),
+              ? CircleAvatar(
+                  backgroundImage: CachedNetworkImageProvider(
+                    clubImageUrl!,
                   ),
                 )
               : Container(),
@@ -65,14 +55,19 @@ class ClubProfileCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8.0),
-          Row(
-            children: List.generate(5, (index) {
-              return Icon(
-                index < rating ? Icons.star : Icons.star_border,
-                color: Colors.amber,
-              );
-            }),
-          ),
+          rating != null
+              ? Row(
+                  children: List.generate(
+                    5,
+                    (index) {
+                      return Icon(
+                        index < rating! ? Icons.star : Icons.star_border,
+                        color: Colors.amber,
+                      );
+                    },
+                  ),
+                )
+              : const SizedBox(),
         ],
       ),
     );
