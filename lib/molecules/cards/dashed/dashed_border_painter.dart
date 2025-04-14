@@ -26,7 +26,7 @@ class DashedBorderPainter extends CustomPainter {
       ..addRRect(
         RRect.fromRectAndRadius(
           Offset.zero & size,
-          Radius.circular(10),
+          const Radius.circular(10),
         ),
       );
 

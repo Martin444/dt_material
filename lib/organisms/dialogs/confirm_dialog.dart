@@ -35,7 +35,7 @@ class ConfirmDialog extends StatelessWidget {
               children: [
                 TextButton(
                   onPressed: onCancel,
-                  child: Text('Cancelar'),
+                  child: const Text('Cancelar'),
                 ),
                 TextButton(
                   onPressed: onAcept,

@@ -1,6 +1,7 @@
 import 'package:dt_material/utils/dt_colors.dart';
 import 'package:flutter/material.dart';
 
+//DEfino el estilo global
 var styleGlobal = const TextStyle(
   fontFamily: 'Montserrat',
   fontStyle: FontStyle.normal,
@@ -245,5 +246,31 @@ class DTTextStyle {
     color: DTColors.bgLink,
     fontSize: 18,
     fontWeight: FontWeight.w700,
+  );
+
+  // BOOKING PAGE
+
+  static TextStyle titleBooking = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  );
+
+  static TextStyle subTitleBooking = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle dateDayItem = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 32,
+    fontWeight: FontWeight.bold,
+  );
+
+  static TextStyle dateNameItem = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 19,
+    fontWeight: FontWeight.w500,
   );
 }
