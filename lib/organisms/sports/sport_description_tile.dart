@@ -1,5 +1,4 @@
 import 'package:dt_material/dt_material.dart';
-import 'package:dt_material/utils/formaters/currency_converter.dart';
 import 'package:flutter/material.dart';
 
 class SportDescriptionTile extends StatelessWidget {

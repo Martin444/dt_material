@@ -29,6 +29,12 @@ class DTColors {
 
   static Color bgButton = const Color(0xff121212);
 
+  static Color bgItemContainer = const Color(0xffFBFBFB);
+
+  static Color bgItemDisableContainer = const Color(0xffE8E8E8);
+
+  static Color bgItemSelectedContainer = const Color(0xff404040);
+
   static Color bgButtonSecundary = const Color(0xFFFFFFFF);
 
   static Color iconColor = const Color(0xff8E92A2);
@@ -46,4 +52,8 @@ class DTColors {
   static Color textColor4 = const Color(0xff8E92A2);
 
   static Color textColor5 = const Color(0xFF000000);
+
+  static Color textColor6 = const Color(0xFF9A9A9A);
+
+  static Color borderContainerColor = const Color(0xFFE2E2E2);
 }

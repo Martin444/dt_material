@@ -1,6 +1,9 @@
 export 'package:dt_material/utils/dt_colors.dart';
 export 'package:dt_material/utils/validators/validators_utils.dart';
 export 'package:dt_material/utils/validators/sports_validators.dart';
+export 'package:dt_material/utils/formaters/date_formater.dart';
+export 'package:dt_material/utils/formaters/texts_formaters.dart';
 export 'package:dt_material/utils/dt_assets.dart';
 export 'package:dt_material/utils/style/dt_style_fonts.dart';
 export 'package:dt_material/utils/style/dt_style_containers.dart';
+export 'package:dt_material/utils/formaters/currency_converter.dart';

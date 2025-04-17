@@ -26,14 +26,14 @@ class ButtonPrimary extends StatelessWidget {
       child: TextButton(
         style: ButtonStyle(
           backgroundColor: disabled || onPressed == null
-              ? WidgetStateProperty.all(DTColors.bgButton)
+              ? WidgetStateProperty.all(DTColors.bgItemDisableContainer)
               : WidgetStateProperty.all(DTColors.bgButton),
           overlayColor: WidgetStateProperty.all(
             const Color.fromARGB(255, 97, 97, 97).withOpacity(0.1),
           ),
           padding: WidgetStateProperty.all(
             const EdgeInsets.symmetric(
-              vertical: 15,
+              vertical: 20,
               horizontal: 15,
             ),
           ),
@@ -56,7 +56,7 @@ class ButtonPrimary extends StatelessWidget {
                         Text(
                           title,
                           textAlign: TextAlign.center,
-                          style: DTTextStyle.primaryButtonStyle,
+                          style: disabled ? DTTextStyle.secundaryButtonStyle : DTTextStyle.primaryButtonStyle,
                         ),
                       ],
                     ),

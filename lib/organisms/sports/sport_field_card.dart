@@ -1,6 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:dt_material/dt_material.dart';
-import 'package:dt_material/utils/formaters/currency_converter.dart';
 import 'package:dt_material/utils/overflow_text.dart';
 import 'package:flutter/material.dart';
 
