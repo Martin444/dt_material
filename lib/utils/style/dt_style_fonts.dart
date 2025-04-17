@@ -288,4 +288,25 @@ class DTTextStyle {
     fontSize: 19,
     fontWeight: FontWeight.w500,
   );
+
+  static TextStyle confirmTimeTile = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle confirmTimeValue = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle detailTitle = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle detailValue = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+  );
 }

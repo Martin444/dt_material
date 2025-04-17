@@ -6,3 +6,4 @@ export 'package:dt_material/utils/formaters/texts_formaters.dart';
 export 'package:dt_material/utils/dt_assets.dart';
 export 'package:dt_material/utils/style/dt_style_fonts.dart';
 export 'package:dt_material/utils/style/dt_style_containers.dart';
+export 'package:dt_material/utils/formaters/currency_converter.dart';
