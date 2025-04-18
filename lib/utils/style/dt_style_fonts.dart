@@ -309,4 +309,26 @@ class DTTextStyle {
     fontSize: 16,
     fontWeight: FontWeight.w500,
   );
+
+  //Pending booking tile
+
+  static TextStyle pendingBookingDetailTitle = styleGlobal.copyWith(
+    color: DTColors.textColor2,
+    fontSize: 16,
+    fontWeight: FontWeight.w700,
+  );
+
+  //Event tile book
+
+  static TextStyle eventOrganiceName = styleGlobal.copyWith(
+    color: DTColors.textColor2,
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle eventOrganiceDate = styleGlobal.copyWith(
+    color: DTColors.textColor2,
+    fontSize: 15,
+    fontWeight: FontWeight.w400,
+  );
 }
