@@ -114,9 +114,9 @@ class DTTextStyle {
     fontWeight: FontWeight.w600,
   );
   static TextStyle parraftycs = styleGlobal.copyWith(
-    color: DTColors.textColor1,
-    fontSize: 18,
-    fontWeight: FontWeight.w600,
+    color: DTColors.textColor5,
+    fontSize: 17,
+    fontWeight: FontWeight.w400,
   );
   static TextStyle tytlestyleftycs = styleGlobal.copyWith(
     color: DTColors.textColor5,
@@ -125,8 +125,8 @@ class DTTextStyle {
   );
   static TextStyle subTitletyc = styleGlobal.copyWith(
     color: DTColors.textColor5,
-    fontSize: 18,
-    fontWeight: FontWeight.w500,
+    fontSize: 19,
+    fontWeight: FontWeight.w600,
   );
 
   static TextStyle description1 = styleGlobal.copyWith(
