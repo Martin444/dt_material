@@ -18,8 +18,8 @@ class DTIcons {
   static String iconGmail = 'assets/logo/gmail.svg';
   static String iconEdit = 'assets/edit-icon.svg';
   static String iconDelete = 'assets/delete-icon.svg';
-  static String iconUpload = 'assets/upload.svg';
-  static String iconPlus = 'assets/plus.svg';
+  static String iconUpload = 'assets/icons/upload.svg';
+  static String iconPlus = 'assets/icons/plus.svg';
 }
 
 class DTImages {

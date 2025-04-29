@@ -41,7 +41,7 @@ class DTTextStyle {
   );
   static TextStyle titleDailymessage = styleGlobal.copyWith(
     color: DTColors.textColor3,
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: FontWeight.w300,
   );
 
