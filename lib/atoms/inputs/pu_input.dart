@@ -114,6 +114,12 @@ class _DTInputState extends State<DTInput> {
             hoverColor: DTColors.bgInput,
             focusColor: DTColors.bgInput,
             hintText: widget.hintText,
+            label: widget.labelText != null
+                ? Text(
+                    widget.labelText!,
+                    style: DTTextStyle.textLabelMenu,
+                  )
+                : null,
             hintStyle: DTTextStyle.hintTextStyle,
             floatingLabelBehavior: FloatingLabelBehavior.always,
             isCollapsed: false,

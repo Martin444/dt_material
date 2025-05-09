@@ -32,57 +32,58 @@ class _InputDropDownState<T> extends State<DTInputDropDown<T>> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        DropdownButtonFormField<T>(
-          value: selectedValue ?? widget.initialItem,
-          iconEnabledColor: DTColors.iconColor,
-          decoration: InputDecoration(
-            fillColor: DTColors.bgInput,
-            hoverColor: DTColors.bgInput,
-            focusColor: DTColors.bgInput,
-            hintText: widget.hintText,
-            hintStyle: DTTextStyle.hintTextStyle,
-            floatingLabelBehavior: FloatingLabelBehavior.always,
-            isCollapsed: false,
-            alignLabelWithHint: false,
-            errorText: widget.errorText,
-            errorStyle: const TextStyle(
-              fontWeight: FontWeight.w600,
-            ),
-            filled: true,
-            focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: DTColors.primaryColor),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            border: OutlineInputBorder(
-              borderSide: BorderSide(color: DTColors.borderInputColor),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: DTColors.borderInputColor),
-              borderRadius: BorderRadius.circular(8),
-            ),
-          ),
-          focusColor: Colors.transparent,
-          style: DTTextStyle.hintTextStyle,
-          validator: widget.validator,
-          hint: Text(
-            widget.hintText,
-            style: DTTextStyle.hintTextStyle,
-          ),
-          items: widget.items,
-          onChanged: (T? newValue) {
-            if (newValue != null) {
-              widget.onSelect(newValue);
-              setState(() {
-                selectedValue = newValue;
-              });
-            }
-          },
+    return DropdownButtonFormField<T>(
+      value: selectedValue ?? widget.initialItem,
+      iconEnabledColor: DTColors.iconColor,
+      decoration: InputDecoration(
+        fillColor: DTColors.bgInput,
+        hoverColor: DTColors.bgInput,
+        focusColor: DTColors.bgInput,
+        label: widget.label.isNotEmpty
+            ? Text(
+                widget.label,
+                style: DTTextStyle.textLabelMenu,
+              )
+            : null,
+        hintText: widget.hintText,
+        hintStyle: DTTextStyle.hintTextStyle,
+        floatingLabelBehavior: FloatingLabelBehavior.always,
+        isCollapsed: false,
+        alignLabelWithHint: false,
+        errorText: widget.errorText,
+        errorStyle: const TextStyle(
+          fontWeight: FontWeight.w600,
         ),
-      ],
+        filled: true,
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: DTColors.primaryColor),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        border: OutlineInputBorder(
+          borderSide: BorderSide(color: DTColors.borderInputColor),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: DTColors.borderInputColor),
+          borderRadius: BorderRadius.circular(8),
+        ),
+      ),
+      focusColor: Colors.transparent,
+      style: DTTextStyle.hintTextStyle,
+      validator: widget.validator,
+      hint: Text(
+        widget.hintText,
+        style: DTTextStyle.hintTextStyle,
+      ),
+      items: widget.items,
+      onChanged: (T? newValue) {
+        if (newValue != null) {
+          widget.onSelect(newValue);
+          setState(() {
+            selectedValue = newValue;
+          });
+        }
+      },
     );
   }
 }
