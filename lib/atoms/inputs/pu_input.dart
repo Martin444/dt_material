@@ -17,9 +17,11 @@ class DTInput extends StatefulWidget {
   final List<TextInputFormatter>? formaters;
   final void Function(String)? onChanged;
   final void Function(String)? onSubmited;
+  final void Function()? onTapInput;
   final bool? isPassword;
   final int? maxLines;
   final bool? visibleText;
+  final bool? readOnly;
   final String? errorText;
   final TextEditingController controller;
 
@@ -35,8 +37,10 @@ class DTInput extends StatefulWidget {
     this.isPassword,
     this.onChanged,
     this.errorText,
+    this.onTapInput,
     this.focusNode,
     this.onSubmited,
+    this.readOnly,
     this.maxLines,
     this.validator,
   });
@@ -107,7 +111,9 @@ class _DTInputState extends State<DTInput> {
           textInputAction: widget.textInputAction,
           keyboardType: widget.textInputType,
           focusNode: widget.focusNode,
+          readOnly: widget.readOnly ?? false,
           maxLines: widget.maxLines ?? 1,
+          onTap: widget.onTapInput,
           inputFormatters: getFormatForTypeInput(),
           decoration: InputDecoration(
             fillColor: DTColors.bgInput,
