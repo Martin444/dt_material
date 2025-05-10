@@ -17,11 +17,23 @@ class DisponibilityListWidget extends StatelessWidget {
       TimeOfDay end = entry['end'] as TimeOfDay;
 
       return ListTile(
-        title: Text(
-          "$day: ${start.toFormattedString()} a ${end.toFormattedString()}",
-          style: const TextStyle(
-            fontSize: 16,
-          ),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              "$day: ",
+              style: const TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              "${start.toFormattedString()} a ${end.toFormattedString()}",
+              style: const TextStyle(
+                fontSize: 15,
+              ),
+            ),
+          ],
         ),
         leading: const Icon(Icons.calendar_today, color: Colors.blue),
       );
