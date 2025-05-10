@@ -3,6 +3,7 @@ export 'package:dt_material/organisms/sports/club_profile_card.dart';
 export 'package:dt_material/organisms/sports/sport_card_banner.dart';
 export 'package:dt_material/organisms/sports/sport_field_card.dart';
 export 'package:dt_material/organisms/sports/sport_description_tile.dart';
+export 'package:dt_material/organisms/sports/disponibility_list_widget.dart';
 export 'package:dt_material/organisms/dialogs/confirm_dialog.dart';
 export 'package:dt_material/organisms/bookings/item_date_selectable_tile.dart';
 export 'package:dt_material/organisms/bookings/pending_book_tile.dart';
