@@ -1,6 +1,9 @@
 class DTIcons {
   static String iconCart = 'pu_material/assets/icon-cart.svg';
   static String iconBack = 'assets/icons/icon-back.svg';
+  static String iconPaymentPending = 'assets/icons/pay-icon.svg';
+  static String iconPaymentConfirm = 'assets/icons/confirm-icon.svg';
+  static String iconPaymentDeneided = 'assets/icons/deneid-icon.svg';
   static String iconCheck = 'pu_material/assets/icon-check.svg';
   static String iconEyeClose = 'assets/eye-close.svg';
   static String iconEyeOpen = 'assets/eye-open.svg';
