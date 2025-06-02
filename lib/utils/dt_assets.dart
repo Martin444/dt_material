@@ -4,6 +4,7 @@ class DTIcons {
   static String iconPaymentPending = 'assets/icons/pay-icon.svg';
   static String iconPaymentConfirm = 'assets/icons/confirm-icon.svg';
   static String iconPaymentDeneided = 'assets/icons/deneid-icon.svg';
+  static String iconUpload = 'assets/icons/upload.svg';
   static String iconCheck = 'pu_material/assets/icon-check.svg';
   static String iconEyeClose = 'assets/eye-close.svg';
   static String iconEyeOpen = 'assets/eye-open.svg';
@@ -22,7 +23,6 @@ class DTIcons {
   static String iconGmail = 'assets/logo/gmail.svg';
   static String iconEdit = 'assets/edit-icon.svg';
   static String iconDelete = 'assets/delete-icon.svg';
-  static String iconUpload = 'assets/icons/upload.svg';
   static String iconPlus = 'assets/icons/plus.svg';
 }
 
