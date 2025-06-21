@@ -187,6 +187,30 @@ class DTTextStyle {
     height: 1.0,
   );
 
+  /// Detail item page
+  ///
+  ///
+  static TextStyle totalDetailItem = styleGlobal.copyWith(
+    color: DTColors.textColor3,
+    fontSize: 21,
+    fontWeight: FontWeight.bold,
+    height: 1.0,
+  );
+
+  static TextStyle subTotalDetailItem = styleGlobal.copyWith(
+    color: DTColors.textColor5,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    height: 1.0,
+  );
+
+  static TextStyle taxDetailItem = styleGlobal.copyWith(
+    color: DTColors.textColor3,
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+    height: 1.0,
+  );
+
   //////////////////////
   ///
   ///

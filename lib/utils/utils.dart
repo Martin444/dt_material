@@ -9,3 +9,4 @@ export 'package:dt_material/utils/style/dt_style_fonts.dart';
 export 'package:dt_material/utils/style/dt_style_containers.dart';
 export 'package:dt_material/utils/formaters/currency_converter.dart';
 export 'package:dt_material/utils/formaters/currency_formatter.dart';
+export 'package:dt_material/utils/formaters/hours_formatters.dart';
