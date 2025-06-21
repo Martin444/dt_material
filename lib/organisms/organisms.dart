@@ -8,4 +8,5 @@ export 'package:dt_material/organisms/dialogs/confirm_dialog.dart';
 export 'package:dt_material/organisms/bookings/item_date_selectable_tile.dart';
 export 'package:dt_material/organisms/bookings/pending_book_tile.dart';
 export 'package:dt_material/organisms/bookings/event_tile_booking.dart';
+export 'package:dt_material/organisms/bookings/dt_summary_detail.dart';
 export 'package:dt_material/organisms/headers/headers.dart';
